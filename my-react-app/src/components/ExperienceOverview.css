@@ -1,0 +1,269 @@
+/* ExperienceOverview.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.experience-container {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #e94560, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.era-timeline-preview {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  position: relative;
+}
+
+.era-timeline-preview::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #e94560, #9b59b6);
+  z-index: 0;
+}
+
+.era-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.era-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.era-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.event-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.event-details h2, .registration-cta h2 {
+  margin-bottom: 1.5rem;
+  color: #e94560;
+}
+
+.event-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.event-details li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.duration-options {
+  margin-top: 2rem;
+}
+
+.duration-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.duration-card {
+  background-color: rgba(15, 52, 96, 0.6);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.duration-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #e94560;
+}
+
+.registration-cta {
+  background-color: rgba(15, 52, 96, 0.6);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-button {
+  padding: 1rem 2rem;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+}
+
+.era-experience {
+  background-color: rgba(15, 52, 96, 0.8);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.era-experience h2 {
+  margin-bottom: 1.5rem;
+  color: #e94560;
+}
+
+.era-experience-content {
+  display: flex;
+  gap: 2rem;
+  border-left: 5px solid;
+  padding-left: 2rem;
+}
+
+.era-icon-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.game-features {
+  margin: 3rem 0;
+}
+
+.game-features h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #e94560;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: rgba(15, 52, 96, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+  color: #e94560;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.faq-section {
+  margin: 3rem 0;
+}
+
+.faq-section h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #e94560;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.faq-item {
+  background-color: rgba(15, 52, 96, 0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item h3 {
+  color: #e94560;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .event-overview {
+    grid-template-columns: 1fr;
+  }
+  
+  .era-experience-content {
+    flex-direction: column;
+  }
+  
+  .era-timeline-preview {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .era-icon-container {
+    margin: 0 1rem;
+  }
+}
